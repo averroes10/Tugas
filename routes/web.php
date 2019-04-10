@@ -22,7 +22,7 @@ Route::get('/barang_masuk', function () {
     return view('barang-masuk');
 });
 
-Route::get('/detail-barang','DetailBarangController@index');
+Route::get('/detail-barang','DetailBarangMasukController@index');
 
 
 
@@ -44,6 +44,8 @@ Route::get('/distributor/delete/{id}','DistributorController@delete');
 
 Route::get('barang-masuk','BarangMasukController@index');
 Route::post('barang-masuk/save','BarangMasukController@save');
+Route::post('barang-masuk/update/{id}','BarangMasukController@update');
+Route::get('barang-masuk/delete/{id}','BarangMasukController@delete');
 
 
 

@@ -29,32 +29,22 @@
               	<form action="#">
                  <div class="form-group">
                   <label>Nomor Nota</label>
-                  <input type="number" class="form-control" placeholder="Nomor Nota ....">
+                  <input type="number" class="form-control" name="no_nota">
                 </div>
 
  <div class="form-group">
-                  <label>Tanggal Masuk</label>
-                  <input type="date" class="form-control" placeholder="">
-                </div>	                
-                 <div class="form-group">
-                  <label>ID Petugas</label>
-                  <select class="form-control">
-                  	<option>1</option>
-                  	<option>2</option>
-                  </select>
-                </div>
-                 <div class="form-group">
-                  <label>ID Distributor</label>
-                  <select class="form-control">
-                  	<option>1</option>
-                  	<option>1</option>
-                  </select>
-                </div>
-                 <div class="form-group">
-                  <label>Total</label>
-                  <input type="number" class="form-control" placeholder="Total ....">
-                </div>
-
+                  <label>Kode Barang</label>
+                  <input type="number" class="form-control" name="kode_barang">
+                </div>	 
+                <div class="form-group">
+                  <label>Jumlah</label>
+                  <input type="number" class="form-control" name="jumlah">
+                </div>   
+                <div class="form-group">
+                  <label>Subtotal</label>
+                  <input type="number" class="form-control" name="jumlah">
+                </div>                  
+               
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
@@ -94,7 +84,7 @@
                 </div>
                  <div class="form-group">
                   <label>ID Distributor</label>
-                  <select class="form-control">
+                  <jumlah class="form-control">
                   	<option>1</option>
                   	<option>1</option>
                   </select>
@@ -120,11 +110,12 @@
 <table id="example" class="ui celled table" style="width:100%">
         <thead>
             <tr>
-                <th>Name</th>
-                <th>Position</th>
-                <th>Office</th>
-                <th>Age</th>
-                <th>Start date</th>
+                <th>Nomer Nota</th>
+                <th>Tanggal Masuk</th>
+                <th>ID Petugas</th>
+                <th>ID Distributor</th>
+                <th>Total</th>
+                
                 <th colspan="2">Action</th>
             </tr>
         </thead>
